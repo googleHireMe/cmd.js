@@ -1,0 +1,130 @@
+{
+	"commandPresets": [
+		{
+			"name":"changeDirictory",
+			"command": "cd",
+			"parameters": null,
+			"isConsoleCommand": true
+		},
+		{
+			"name": "openInVsCode",
+			"command": "code",
+			"parameters": ["."],
+			"isConsoleCommand": true
+		},
+		{
+			"name":"npmInstall",
+			"command": "npm",
+			"parameters": ["install"],
+			"isConsoleCommand": true
+		},
+		{
+			"name": "npmRunStart",
+			"command": "npm",
+			"parameters": ["run", "start"],
+			"isConsoleCommand": true
+		},
+		{
+			"name":"gitSwitchToDevelop",
+			"command": "git",
+			"parameters": ["switch","develop"],
+			"isConsoleCommand": true
+		},
+		{
+			"name":"gitPull",
+			"command": "git",
+			"parameters": ["pull"],
+			"isConsoleCommand": true
+		},
+		{
+			"name": "runMIDCwithRxApp",
+			"shouldRunCommandsInParallel": true,
+			"commands": [
+				{
+					"name": "runMIDC"
+				},
+				{
+					"name": "runRxAppSdk"
+				},
+				{
+					"name": "runRxApp"
+				},
+				{
+					"name": "runPatientApp"
+				}
+			]
+		},
+		{
+			"name": "runMIDC",
+			"path": "C:/Projects/MIDC/myitero.com",
+			"commands": [
+				{
+					"name": "gitSwitchToDevelop"
+				},
+				{
+					"name": "gitPull"
+				},
+				{
+					"name": "npmInstall"
+				},
+				{
+					"name": "npmRunStart"
+				}
+			]
+		},
+		{
+			"name": "runRxAppSdk",
+			"path": "C:/Projects/rx-app-sdk",
+			"commands": [
+				{
+					"name": "gitSwitchToDevelop"
+				},
+				{
+					"name": "gitPull"
+				},
+				{
+					"name": "npmInstall"
+				},
+				{
+					"name": "npmRunStart"
+				}
+			]
+		},
+		{
+			"name": "runRxApp",
+			"path": "C:/Projects/RX-UI-2.0",
+			"commands": [
+				{
+					"name": "gitSwitchToDevelop"
+				},
+				{
+					"name": "gitPull"
+				},
+				{
+					"name": "npmInstall"
+				},
+				{
+					"name": "npmRunStart"
+				}
+			]
+		},
+		{
+			"name": "runPatientApp",
+			"path": "C:/Projects/Patient-App",
+			"commands": [
+				{
+					"name": "gitSwitchToDevelop"
+				},
+				{
+					"name": "gitPull"
+				},
+				{
+					"name": "npmInstall"
+				},
+				{
+					"name": "npmRunStart"
+				}
+			]
+		}
+	]
+}
